@@ -5,6 +5,11 @@ body {
     line-height: 1.3;
 }
 
+::selection {
+    background-color: var();
+    color: var();
+}
+
 .header {
     padding: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -48,29 +53,36 @@ a {
 }
 main {
     display: flex;
-    /* Forces elements to the next line if they don't fit */
     flex-wrap: wrap;
-    margin-top: 2%;
+    margin-top: 5%;
 }
+
+.column {
+    display: flex;
+    flex-direction: column
+}
+
 
 .card {
     border-style: solid;
     border-width: 5px;
     padding: 10px;
-    float: left;
+    float: right;
     flex: 1 0 0;
 }
 
 .card header {
-    padding: 20px;
+    padding: 5px;
+
 }
 
 .card p {
     text-align: left;
+    justify-content: space-between;
 }
 
 .card img {
-    width: 100%;
+    width: 50%;
     min-width: 400px;
 }
 
@@ -91,9 +103,15 @@ main {
 
 
 
-footer {
-    text-align: center;
+footer ul {
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 25px;
     background-color: silver;
     color: black;
+}
+
+footer li {
+    display: inline;
+    margin-bottom: 2%;
 }
