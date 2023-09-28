@@ -95,7 +95,7 @@ main {
     border-width: 5px;
     padding: 10px;
     width: 100%;
-    flex: wrap;
+    flex: right;
 }
 
 #achievements {
