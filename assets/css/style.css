@@ -116,7 +116,8 @@ main {
 }
 
 #achievements img {
-    width: 50%;
+    width: 200px;
+    height: 260px;
     min-width: 400px;
     flex-direction: right;
     align-self: center;
@@ -124,7 +125,8 @@ main {
 }
 
 #mywork img {
-    width: 50%;
+    size: 25%;
+    width: 25%;
     min-width: 400px;
     flex-direction: right;
     align-self: center;
