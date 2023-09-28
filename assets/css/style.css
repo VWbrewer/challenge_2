@@ -126,10 +126,8 @@ main {
 
 #mywork img {
     size: 25%;
-    width: 25%;
     min-width: 400px;
     flex-direction: right;
-    align-self: center;
     flex: auto;
 }
 
