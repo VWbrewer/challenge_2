@@ -75,7 +75,6 @@ main {
 .container p {
     text-align: left;
     justify-content: space-between;
-    margin-right: 0 auto;
 }
 
 .container img {
@@ -131,6 +130,18 @@ main {
     flex: auto;
 }
 
+.img-hover-zoom {
+    height: 10%;
+    overflow: hidden; 
+}
+
+.img-hover-zoom img {
+    transition: transform .2s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.2);
+}
 
 /* Cards are split into two columns */
 @media screen and (max-width: 992px) {
